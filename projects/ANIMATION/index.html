@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to left, #667eea, #764ba2);
+    text-align: center;    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+     h1{
+         transition:all 0.3s ease;
+     }
+     h1:hover{
+        transform:translate(-5px);
+        color:green;
+        box-shadow: 5px 5px 15px  red;
+     }
+     
+    .card{
+        width: 260px;
+        background: linear-gradient(to right, yellow, #01651c);
+        border-radius: 25px;
+        padding: 20px;
+        border: 5px solid skyblue;;
+        transition:all 0.3s ease-in;
+
+    }
+    .card:hover
+    {
+       transform:translate(5px,-5px);
+        color:green;
+        box-shadow: 5px 5px 15px  red;
+     }
+     .slide-card{
+        animation: slideIn 2s ease infinite;
+     }
+     @keyframes slideIn{
+        from{
+            transform:translateX(-100%);
+        }to{
+            transform:translateX(0);
+        }
+     }
+     .bounce-card{
+        animation: bounce 2s ease infinite;
+
+     }
+     @keyframes bounce{
+        0%{
+            transform:translateY(0);
+        }
+        100%{
+            transform: translateY(-20px);
+        }
+     }
+     .rotate-card{
+        animation:rotate 5s ease-out  infinite;
+
+     }
+     @keyframes rotate{
+
+          from{
+             translate:rotate(0deg);
+          }
+          to{
+            transform:rotate(360deg);
+          }
+     }
+
+     .pulse-card{
+        animation:pulse 0.3s ease-out infinite;
+
+     }
+     @keyframes pulse {
+        0%{
+           transform:scale(1);          
+        }
+        50%{
+            transform:scale(1.2);
+            opacity:0.7;
+
+        }
+        100%{
+            transform:scale(1);
+            opacity:1;
+        }
+
+     }
+     button{
+        background-color:skyblue;
+        color:green;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+        font-weight: bold;
+        transition: all 0.3s ease-in;
+     
+
+     }
+     button:hover{
+        transform:translate(-5px,-5px);
+        background-color:purple;
+        color:white;
+    }
+     .loader{
+         height:50px;
+         width:50px;
+         border:5px solid blue;
+         border-radius:50px;
+         margin:auto;
+         border-top: 5px solid red;
+         animation:spin 1s ease infinite;
+     }
+    @keyframes spin{
+         
+            from{
+               transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+         
+    }
+
+</style>
+<body>
+<h1>
+    Animation Examples
+</h1>
+<div class="main">
+    <div class = "card slide-card ">
+        <h2> slide card</h2>
+        <button>Click Me</button>
+    </div>
+    
+    <div class = " card bounce-card ">
+        <h2> bounce card</h2>
+        <button>Click Me</button>
+    </div>
+
+     <div class = " card rotate-card ">
+        <h2> rotate card</h2>
+        <button>Click Me</button>
+    </div>
+
+     <div class = " card pulse-card ">
+        <h2> pulse card</h2>
+        <button>Click Me</button>
+    </div>
+
+     <div class = "card">
+        <div class="loader"></div>
+        <h2> loader card</h2>
+        <button>Click Me</button>
+    </div>
+    
+</div>
+</body>
+</html>

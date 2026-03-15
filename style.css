@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    color: #007bff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right side */
+.hero-right {
+    flex: 1;
+    background: linear-gradient(to right, #cfcfcf, #8e8e8e);
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-right h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-right button {
+    width: 160px;
+    padding: 12px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-right button:hover {
+    background: white;
+    color: #333;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        padding: 50px 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-right p {
+        max-width: 100%;
+    }
+}

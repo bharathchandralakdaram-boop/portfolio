@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toss Game</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,red, green, blue, yellow);
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        img{
+            background: transparent;
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+             transition: transform 0.6s ease-in-out;
+        }
+        button{
+            height: 35px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h2>Simple Toss Game</h2>
+    <img src="images/image.png" height="100px" width="100px">
+    <br>
+    <br>
+
+    <button id="headsBtn">Heads</button>
+    <button id="tailsBtn">Tails</button>
+    
+    <h3 id="result"></h3>
+
+    <script>
+
+        const headsBtn = document.getElementById("headsBtn");
+        const tailsBtn = document.getElementById("tailsBtn");
+        const resultText = document.getElementById("result");
+         const coin = document.querySelector("img");
+
+
+         headsBtn.onclick = function () {
+           coin.style.transform = "rotateY(720deg)";
+
+        let toss = Math.random() ;
+       
+        if (toss === "Heads") {
+            document.getElementById("result").textContent = "You Choose Heads . You Win ";
+        } else {
+            document.getElementById("result").textContent = "You Choose Heads . You Lose ";
+        }
+
+    }
+     tailsBtn.onclick = function () {
+       coin.style.transform = "rotateY(720deg)";
+
+        let toss = Math.random() ;
+
+        if (toss === "Tails") {
+             document.getElementById("result").textContent = "You Choose Tails . You Win ";
+        } else {
+             document.getElementById("result").textContent = "You Choose Tails . You Lose ";
+        }
+      }
+       
+    </script>
+
+
+</body>
+</html>

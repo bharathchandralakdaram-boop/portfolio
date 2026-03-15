@@ -1,0 +1,15 @@
+
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .box {
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;      
+    background-color: brown; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;  
+ }

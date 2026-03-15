@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroStore</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <style>
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  padding: 130px 0;
+  background: linear-gradient(270deg, #ff512f, #dd2476, #24c6dc);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  color: white;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.bg-dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+}
+
+
+.card {
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  transition: all 0.35s ease;
+}
+.navbar {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+#features {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+
+#features h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+#pricing {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff512f, #f09819);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #f09819, #ff512f);
+}
+
+
+#testimonial {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+
+
+#contact {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+footer {
+  background: #000;
+}
+</style>
+
+
+  
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <marquee><a class="navbar-brand fw-bold text-warning" href="#">⚡ ElectroStore</a></marquee>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+ <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="smartphones.html">Smartphones</a></li>
+<li class="nav-item"><a class="nav-link" href="laptops.html">Laptops</a></li>
+<li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero text-center" id="home">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Your One-Stop Electronics Store</h1>
+    <p class="lead">Mobiles • Laptops • Accessories • Home Appliances</p>
+
+    <button class="btn btn-warning btn-lg me-2">Shop Now</button>
+    <button class="btn btn-outline-light btn-lg">Explore Deals</button>
+  </div>
+</section>
+
+
+<section class="py-5 bg-dark">
+  <div class="container">
+    <div id="electronicsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+ 
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#electronicsCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#electronicsCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#electronicsCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+   
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/laptop.jpg" class="d-block w-100 rounded" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Latest Laptops</h3>
+            <p>Powerful performance for work & gaming</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/mobile.jpg" class="d-block w-100 rounded" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Smartphones</h3>
+            <p>Next-gen cameras & processors</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/acc.jpg" class="d-block w-100 rounded" height="500">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Accessories</h3>
+            <p>Headphones, watches & more</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#electronicsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#electronicsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light" id="features">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Product Categories</h2>
+      <p class="text-muted">Latest technology at best prices</p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>📱 Smartphones</h5>
+          <p>Top brands with latest processors and cameras.</p>
+          <button class="btn btn-outline-primary mt-2">See All</button>
+
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>💻 Laptops</h5>
+          <p>Powerful laptops for work, gaming, and studies.</p>
+          <button class="btn btn-outline-primary mt-2">See All</button>
+
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>🎧 Accessories</h5>
+          <p>Headphones, smartwatches, chargers & more.</p>
+            <button class="btn btn-outline-primary mt-2">See All</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5" id="pricing">
+  <div class="container">
+    <div class="text-center mb-5 text-white">
+      <h2 class="fw-bold">Special Offers</h2>
+      <p>Choose the best deals for you</p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>Budget Deals</h5>
+          <p>Up to 30% off on entry-level gadgets</p>
+          <button class="btn btn-primary">View</button>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>Best Sellers</h5>
+          <p>Top-rated products with huge discounts</p>
+          <button class="btn btn-primary">View</button>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 shadow-sm h-100">
+          <h5>Premium Range</h5>
+          <p>High-end electronics with exclusive offers</p>
+          <button class="btn btn-primary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light" id="testimonial">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Customer Reviews</h2>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p class="lead">“Amazing prices and fast delivery!”</p>
+        </div>
+        <div class="carousel-item">
+          <p class="lead">“Best electronics store for students.”</p>
+        </div>
+        <div class="carousel-item">
+          <p class="lead">“Great customer support and quality.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="py-5 text-white" id="contact">
+  <div class="container text-center">
+    <h2 class="fw-bold">Contact ElectroStore</h2>
+    <p>Email: support@electrostore.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Hyderabad, Telangana</p>
+  </div>
+</section>
+
+<footer class="py-4 text-center text-light">
+  <p>&copy; 2026 ElectroStore. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

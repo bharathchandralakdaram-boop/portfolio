@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="form-card">
+
+      <h2 class="title">Student Admission Form</h2>
+
+      <form>
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label>Full Name</label>
+          <input type="text"  placeholder="Enter Your Full Name" >
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter Your Email">
+
+          <label>Password</label>
+          <input type="password" placeholder="Enter Your Password">
+
+          <label>Mobile Number</label>
+          <input type="tel" placeholder="Enter Your Mobile Number">
+
+          <label>Date of Birth</label>
+          <input type="date">
+
+          <label>Age</label>
+          <input type="number"  min="17" max="60" placeholder="Enter Your Age">
+        </fieldset>
+
+        <!-- Academic Details -->
+        <fieldset>
+          <legend>Academic Details</legend>
+
+          <label>Course</label>
+          <select>
+            <option>Select</option>
+            <option>B-Tech</option>
+            <option>B.A</option>
+            <option>MBA</option>
+            <option>BBA</option>
+          </select>
+
+          <label>Branch</label>
+          <input type="text" list="branches">
+          <datalist id="branches">
+            <option> CSE </option>
+            <option> ECE </option>
+            <option> AI- DS </option>
+          </datalist>
+
+         <label> Percentage</label>
+         <input type="range" min="0" max="100">
+        </fieldset>
+
+        
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>Gender</label>
+          <div class="option"><input type="radio" name="gender"> Male</div>
+          <div class="option"><input type="radio" name="gender"> Female</div>
+          <div class="option"><input type="radio" name="gender"> Other</div>
+
+          <label>Languages Known</label>
+          <div class="option"><input type="checkbox"> English</div>
+          <div class="option"><input type="checkbox"> Hindi</div>
+          <div class="option"><input type="checkbox"> Telugu</div>
+        </fieldset>
+
+        <!-- Upload -->
+        <fieldset>
+          <legend>Upload Photo</legend>
+          <input type="file">
+        </fieldset>
+
+        <!-- Website -->
+        <fieldset>
+          <legend>Website</legend>
+          <input type="url" placeholder="https://">
+        </fieldset>
+
+        <!-- Favorite Color -->
+        <fieldset>
+          <legend>Favorite Color</legend>
+          <input type="color" value="#2a7fff">
+        </fieldset>
+
+        <!-- Additional -->
+        <fieldset>
+          <legend>Additional</legend>
+
+          <label>Address</label>
+          <textarea rows="4" placeholder="Enter Address"></textarea>
+        </fieldset>
+
+        <!-- Office Use -->
+        <fieldset>
+          <legend>Office Use</legend>
+
+          <label>Form ID</label>
+          <input type="text" value="ADM001">
+
+          <label>Status</label>
+          <input type="text" value="Verified">
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="btns">
+          <button type="submit" class="btn primary">Submit</button>
+          <button type="reset" class="btn">Reset</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  
+</body>
+</html>

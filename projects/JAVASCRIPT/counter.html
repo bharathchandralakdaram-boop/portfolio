@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            body{
+                background:linear-gradient(to top, green,yellow);
+                margin:0;
+                text-align:center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight:bold;
+                height:100vh;
+                font-size:35px;
+                color:green;
+            }
+            label{
+                font-size:80px;
+                padding:10px;
+                margin:5px;
+            }
+            button{
+                border-radius:10px;
+                width:80px;
+                height:30px;
+                padding:10px;
+                margin:10px;
+                font-family:'Times New Roman', Times, serif;
+                font-weight:black;
+                background-color:lightblue;
+                transition:all 0.3s ease;
+                font-size:15px;
+            }
+            button:hover{
+                transform:scale(1.2);
+                box-shadow: 2px 2px 2px gray;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+   
+       <body>
+    <h1>Counter</h1>
+    <label id="number">0</label>
+    <div>
+        <button id="raise">Raise</button>
+        <button id="clear">Clear</button>
+        <button id="down">Down</button>
+    </div>
+<script>
+    const labelvalue=document.getElementById("number");
+    const raiseBtn=document.getElementById("raise");
+    const clearBtn=document.getElementById("clear");
+    const downBtn=document.getElementById("down");
+   const message=document.createElement("p");
+    document.body.appendChild(message);
+    let count=0;
+    raiseBtn.onclick=function(){
+        count++;
+        labelvalue.textContent=count;
+        message.textContent="Counter increased!";
+    }
+    clearBtn.onclick=function(){
+        count=0;
+        labelvalue.textContent=count;
+        message.textContent="Counter cleared!";
+    }
+    downBtn.onclick=function(){
+        count--;
+        labelvalue.textContent=count;
+        message.textContent="Counter decreased!";
+    }
+
+</script>
+</body>
+</html>

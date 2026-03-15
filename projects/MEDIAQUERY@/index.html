@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Examples</title>
+
+<style>
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+@media (min-width: 768px) {
+    p {
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .box {
+        display: none;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<h1>Media Query Demo</h1>
+
+<p>
+This paragraph changes font size when the screen width is greater than 768px.
+</p>
+
+<div class="box">
+I am a box
+</div>
+
+</body>
+</html>

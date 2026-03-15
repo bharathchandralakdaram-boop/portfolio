@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background: linear-gradient(to top, green , lightyellow);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+            height: 100vh;
+            font-weight: bold;
+        }
+        button{
+            border-radius: 10px;
+            height: 25px;
+            width: 70px;
+            background-color: lightgreen;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            transform: translate3d(5px,5px);
+            box-shadow: 2px 2px 4px gray;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Age Predictor</h1>
+    <label>Guess Age</label>
+    <br>
+    <input id="age" type="number" placeholder="Enter Age">
+    <button id="check">Check</button>
+    <p id="result"></p>
+
+    <script>
+        const age = document.getElementById("age");
+        const checkBtn = document.getElementById("check");
+        let random = Math.ceil(Math.random()*50);
+        checkBtn.onclick = function()
+        {
+            let ageInput = Number(age.value);
+            if(ageInput > random)
+            document.getElementById("result").textContent = "age is too high... Try Again ";
+            else if(ageInput < random)
+            document.getElementById("result").textContent = "Age is too low..";
+            else
+            document.getElementById("result").textContent = "You Guessed Correctly.."; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="form-card">
+
+      <h2 class="title">Passport Application Form</h2>
+
+      <form>
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label>Full Name</label>
+          <input type="text"  placeholder="Enter Your Full Name" >
+
+          <label>Date of Birth</label>
+          <input type="date">
+
+          <label>Gender</label>
+          <div class="option"><input type="radio" name="gender"> Male</div>
+          <div class="option"><input type="radio" name="gender"> Female</div>
+          <div class="option"><input type="radio" name="gender"> Other</div>
+ 
+         <label> Marital Status </label>
+         <select>
+            <option> Married</option>
+            <option> Unmarried </option>
+         </select>
+
+        </fieldset>
+
+        <!-- Contact Details -->
+        
+        <fieldset>
+          <legend> Contact Details </legend>
+        <label> Email</label>
+        <input type="email" >
+
+        <label> Mobile Number </label>
+        <input type="tel" >
+        
+        <label> Address</label>
+       <textarea rows="4" placeholder="Enter Address"></textarea> 
+
+       </fieldset>
+
+       <!-- Passport Details -->
+
+       <fieldset>
+        <legend> Passport Details </legend>
+
+        <label> Type of Application </label>
+         <div class="option"><input type="radio" name="Application"> New Passport </div>
+          <div class="option"><input type="radio" name="Application"> Reissue</div>
+
+        <label> Passport Booklet pages </label>
+        <input type="checkbox"  name="36 pages">36 pages;
+        <input type="checkbox" name="60 pages">60 pages;
+
+        <label> Upload Proof </label>
+        <input type="file">
+
+
+       </fieldset>
+
+        <!-- Declaration -->
+        <fieldset>
+          <legend>Declaration</legend>
+          <label class="inline">
+            <input type="checkbox" name="declaration">
+            I hereby declare that the information given is true.
+          </label>
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="btns">
+          <button type="submit" class="btn primary">Submit</button>
+          <button type="reset" class="btn">Clear</button>
+        </div>
+        </form>
+        </div>
+        </div>
+        </body>
+        </html>

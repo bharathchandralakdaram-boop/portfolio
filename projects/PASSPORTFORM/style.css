@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eaf1ff;
+    padding:20px;
+}
+
+.page{
+    display:flex;
+    justify-content: center;
+}
+
+.form-card{
+    width:600px;
+    background:white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,255,0.3);
+}
+
+.title{
+    font-size: 26px;
+    color:blue;
+    text-align: center;
+}
+
+fieldset{
+    border:1px solid #cfcfcf;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+legend{
+   color:blue;
+   font-size: 22px;
+   font-weight: bolder;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:6px 7px;
+    border: 1px solid #777;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+
+.btns{
+    display:flex;
+    gap:10px;
+    justify-content: center;   
+}
+
+.btn{
+  background: #1a56db;
+  color:white;
+
+  padding: 10px 20px;         
+  font-size: 14px;           
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.btn.primary{
+    background:blue;
+}
+
+.btn:hover{
+    opacity: 0.85;             
+}
